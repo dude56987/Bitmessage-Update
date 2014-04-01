@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=python /opt/PyBitmessage/src/bitmessagemain.py
+Name=PyBitmessage
+Comment=Encrypted Messaging Client
+Categories=Application;Network;Email;
+GenericName=Encrypted Messenger
+Icon=mail-message-new

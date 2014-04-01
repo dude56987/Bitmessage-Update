@@ -1,0 +1,3 @@
+bitmessage-update;
+link /usr/bin/bitmessage-update /etc/cron.daily/bitmessage-update
+ufw allow proto tcp from any to any port 8444;

@@ -1,0 +1,3 @@
+rm -rvf /opt/PyBitmessage;
+rm -vf /etc/cron.daily/bitmessage-update
+ufw delete allow proto tcp from any to any port 8444;
