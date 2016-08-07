@@ -1,3 +1,7 @@
-bitmessage-update;
-link /usr/bin/bitmessage-update /etc/cron.daily/bitmessage-update
-ufw allow proto tcp from any to any port 8444;
+# run bitmessage update to pull the source of bitmessage
+bitmessage-update
+# create links for update in cron and main launcher
+ln -s /usr/bin/bitmessage-update /etc/cron.daily/bitmessage-update
+ln -s /opt/PyBitmessage/src/bitmessagemain.py /usr/bin/pybitmessage
+# setup the firewall settings for bitmessage
+ufw allow proto tcp from any to any port 8444

@@ -24,7 +24,7 @@ build-deb:
 	cp -vf PyBitmessage.desktop ./debian/usr/share/applications/
 	cp -vf PyBitmessage.desktop ./debian/etc/xdg/autostart/
 	# copy over the binary
-	cp -vf bitmessage-update.py ./debian/usr/bin/bitmessage-update
+	cp -vf bitmessage-update.sh ./debian/usr/bin/bitmessage-update
 	# make the program executable
 	chmod +x ./debian/usr/bin/bitmessage-update
 	# Create the md5sums file

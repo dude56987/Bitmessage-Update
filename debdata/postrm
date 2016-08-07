@@ -1,3 +1,7 @@
+# remove source directory
 rm -rvf /opt/PyBitmessage;
-rm -vf /etc/cron.daily/bitmessage-update
+# remove links
+rm -rvf /etc/cron.daily/bitmessage-update
+rm -rvf /usr/bin/pybitmessage
+# remove firewall settings
 ufw delete allow proto tcp from any to any port 8444;

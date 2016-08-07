@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Exec=python /opt/PyBitmessage/src/bitmessagemain.py
+Exec=pybitmessage
 Name=PyBitmessage
 Comment=Encrypted Messaging Client
 Categories=Application;Network;Email;
