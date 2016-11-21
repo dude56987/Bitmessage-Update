@@ -7,4 +7,4 @@ Name=PyBitmessage
 Comment=Encrypted Messaging Client
 Categories=Application;Network;Email;
 GenericName=Encrypted Messenger
-Icon=mail-message-new
+Icon=/opt/PyBitmessage/desktop/can-icon.svg
