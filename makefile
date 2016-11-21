@@ -1,6 +1,6 @@
 show:
 	echo 'Run "make install" as root to install program!'
-	
+
 run:
 	python bitmessage-update.py
 install: build
@@ -26,7 +26,8 @@ build-deb:
 	# copy over the binary
 	cp -vf bitmessage-update.sh ./debian/usr/bin/bitmessage-update
 	# make the program executable
-	chmod +x ./debian/usr/bin/bitmessage-update
+	chmod go-wx ./debian/usr/bin/bitmessage-update
+	chmod u+rwx ./debian/usr/bin/bitmessage-update
 	# Create the md5sums file
 	find ./debian/ -type f -print0 | xargs -0 md5sum > ./debian/DEBIAN/md5sums
 	# cut filenames of extra junk
@@ -34,7 +35,7 @@ build-deb:
 	sed -i.bak 's/\\n*DEBIAN*\\n//g' ./debian/DEBIAN/md5sums
 	sed -i.bak 's/\\n*DEBIAN*//g' ./debian/DEBIAN/md5sums
 	rm -v ./debian/DEBIAN/md5sums.bak
-	# figure out the package size	
+	# figure out the package size
 	du -sx --exclude DEBIAN ./debian/ > Installed-Size.txt
 	# copy over package data
 	cp -rv debdata/. debian/DEBIAN/
