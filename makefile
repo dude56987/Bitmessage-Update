@@ -37,6 +37,8 @@ build-deb:
 	rm -v ./debian/DEBIAN/md5sums.bak
 	# figure out the package size
 	du -sx --exclude DEBIAN ./debian/ > Installed-Size.txt
+	# add the downloaded git repo size
+	du -sx /opt/PyBitmessage >> Installed-Size.txt
 	# copy over package data
 	cp -rv debdata/. debian/DEBIAN/
 	# fix permissions in package

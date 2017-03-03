@@ -2,7 +2,7 @@ Package: pybitmessage-stable-updater
 Version: 0.2.1
 Section: internet
 Maintainer: Carl J Smith <feedback@hacker-haven.com>
-Installed-Size: 44
+Installed-Size: 13816
 Priority: optional
 Architecture: all
 Depends: python, openssl, git, python-msgpack, python-qt4, ufw
