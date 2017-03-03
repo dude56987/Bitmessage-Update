@@ -1,10 +1,10 @@
 Package: pybitmessage-stable-updater
-Version: 0.2.0
+Version: 0.2.1
 Section: internet
 Maintainer: Carl J Smith <feedback@hacker-haven.com>
 Installed-Size: 44
 Priority: optional
 Architecture: all
-Depends: python, openssl, git, python-qt4, ufw 
+Depends: python, openssl, git, python-msgpack, python-qt4, ufw
 Description: Installs and updates bitmessage from the git repo.
  This program installs bitmessage from the git repo and updates the repo once a month with the bitmesssage-update script.
