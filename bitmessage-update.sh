@@ -28,6 +28,10 @@ else
 	# clone the source, this will auto set the origin of the project
 	git clone https://github.com/Bitmessage/PyBitmessage /opt/PyBitmessage;
 fi
-echo 'Fixing file permissions on source directory...';
 # set permissions on everything so users do not have write access
+echo 'Fixing file permissions on source directory...';
 chmod -v -R go-w /opt/PyBitmessage/*;
+# compile bitmessage hashing code in c++ to stop errors during execution
+echo 'Compiling bitmessage hashing code...';
+bash -c "cd /opt/PyBitmessage/src/bitmsghash/;make"
+echo 'Bitmessage Update has finished the update...';

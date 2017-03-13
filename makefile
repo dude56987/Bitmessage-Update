@@ -21,8 +21,8 @@ build-deb:
 	mkdir -p debian/etc/xdg/autostart;
 	# copy over the launcher for the menu so normal users can run
 	# the program
-	cp -vf PyBitmessage.desktop ./debian/usr/share/applications/
-	cp -vf PyBitmessage.desktop ./debian/etc/xdg/autostart/
+	cp -vf pybitmessage.desktop ./debian/usr/share/applications/
+	cp -vf pybitmessage.desktop ./debian/etc/xdg/autostart/
 	# copy over the binary
 	cp -vf bitmessage-update.sh ./debian/usr/bin/bitmessage-update
 	# make the program executable
